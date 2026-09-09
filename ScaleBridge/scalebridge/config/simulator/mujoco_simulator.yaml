@@ -1,0 +1,12 @@
+defaults:
+  - base_simulator
+
+_target_: simulator.mujoco_simulator.MujocoSimulator
+_recursive_: False
+config:
+  headless: False
+  strict_torque_limits: False  # Mismatches are reported and the lower bound wins.
+  record_video: False
+  marker: True
+  joystick: False
+  camera_follow: True

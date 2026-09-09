@@ -1,0 +1,21 @@
+# @package _global_
+
+defaults:
+  - base
+
+formatter:
+  _target_: scaleretarget.formatter.kinematic_formatter.KinematicFormatter
+  _recursive_: False
+  config:
+    formatter_type: kinematic
+
+    kinematic_model_device: cpu
+
+    height_adjust: True
+    # Keep historic output unless a separately versioned run opts in.
+    # collision_sole aligns actual enabled foot collision geometry, not body origins.
+    height_adjust_mode: body_origin
+    # Flat-ground, whole-clip constant Z translation; not a stance/contact solver.
+    ground_offset_m: 0.0
+    collision_sole_body_names: [left_ankle_roll_link, right_ankle_roll_link]
+    root_offset: False

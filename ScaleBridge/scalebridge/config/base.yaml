@@ -1,0 +1,13 @@
+defaults:
+  - _self_
+  - asset: g1_29dof
+  - agent: bfm_agent
+  - simulator: mujoco_simulator
+  - observation: bfm
+  - env: motion_tracking
+
+device: 'cuda'
+max_steps: 0  # Interactive legacy GUI; headless execution must override this.
+warmup_steps: 20
+realtime: true
+allow_real_world: false

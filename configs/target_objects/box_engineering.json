@@ -1,0 +1,14 @@
+{
+  "size": [0.30, 0.30, 0.30],
+  "position": [0.9, -0.7, 0.16],
+  "mass": 1.0,
+  "static_friction": 0.6,
+  "dynamic_friction": 0.5,
+  "restitution": 0.05,
+  "contact_offset": 0.005,
+  "rest_offset": 0.0,
+  "linear_damping": 0.0,
+  "angular_damping": 0.02,
+  "color": [0.62, 0.32, 0.10],
+  "roughness": 0.75
+}

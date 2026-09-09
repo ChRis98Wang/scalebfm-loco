@@ -1,0 +1,37 @@
+name: Simulator-independent tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install CPU test dependencies only
+        run: python -m pip install -r requirements-ci.txt
+      - name: CLI, process-boundary and audit regression tests
+        run: python -m pytest tests/test_ci_workflow.py tests/test_gui_launcher.py ScaleTrack/tests/test_evaluation_cli.py ScaleTrack/tests/test_evaluation_manifest.py -q
+      - name: Strict eight-mode report comparison tests
+        run: python -m pytest tests/test_mask_report_compare.py -q
+      - name: UMR A/B planning and quality-gate contracts (no data or simulator)
+        run: python -m pytest tests/test_umr_behavior_ab_training.py tests/test_umr_behavior_ab_evaluation.py tests/test_umr_behavior_ab_comparison.py -q
+      - name: Shell and whitespace checks
+        run: |
+          bash -n scripts/open_motion_browser.sh
+          git diff --check

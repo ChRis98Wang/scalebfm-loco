@@ -1,0 +1,64 @@
+# Local experiments and licensed inputs are not source releases.
+/logs/
+/ScaleTrack/logs
+/ScaleTrack/motions/
+/ScaleRetarget/dataset/
+/ScaleRetarget/retargeted_dataset/
+/ScaleRetarget/body_models/
+/ScaleRetarget/outputs/
+/data/
+/datasets/
+/checkpoints/
+/artifacts/
+/local/
+
+# Source-only publication: obtain runtime assets/dependencies separately.
+/ScaleBridge/third_party/
+/ScaleBridge/accessories/
+/ScaleBridge/assets/
+/ScaleBridge/scalebridge/data/
+/ScaleRetarget/assets/
+/ScaleTrack/assets/
+/ScaleTrack/source/scaletrack/data/
+/ScaleTrack/source/scaletrack/scaletrack/assets/robots/
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.whl
+*.mp4
+*.gif
+*.so
+*.so.*
+*.a
+
+# Isolated, unofficial UMR trial checkout; not vendored into our source release.
+/external/umr_trial_20260908/
+
+# Checkpoints, partial downloads and archives (already tracked files are NOT removed).
+*.pt
+*.pth
+*.ckpt
+*.part
+*.tar
+*.tar.gz
+*.tar.bz2
+*.zip
+
+# Interpreter/build caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+build/
+dist/
+
+# Machine configuration and download credentials.
+.env
+.env.*
+!.env.example
+cookies*.txt
+*.cookies
+.DS_Store
