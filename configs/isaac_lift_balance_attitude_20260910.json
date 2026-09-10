@@ -1,0 +1,6 @@
+{
+  "wrist_offset_x_m": 0.03,
+  "clearance_feedback_gain_per_s": 1.0,
+  "pitch_feedback_gain": 3.0,
+  "maximum_pitch_correction_rad": 0.35
+}

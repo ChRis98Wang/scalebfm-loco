@@ -28,6 +28,10 @@
 *.whl
 *.mp4
 *.gif
+# Explicitly reviewed synthetic-reference demo media; all other videos stay local.
+!/docs/media/isaac-lift-single-state-20260910-raw.mp4
+!/docs/media/isaac-lift-single-state-20260910.mp4
+!/docs/media/isaac-lift-single-state-20260910.gif
 *.so
 *.so.*
 *.a

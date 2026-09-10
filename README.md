@@ -1,16 +1,51 @@
 # ScaleBFM-Loco — engineering source snapshot
 
-This development branch publishes the ScaleRetarget / ScaleTrack / ScaleBridge
+## Native IsaacLab box lift — single-state development pass
+
+[![Official BFM plus VR-3 planner lifts a physical 1 kg box, holds, replaces and releases it; single initial state, no vision](docs/media/isaac-lift-single-state-20260910.gif)](docs/ISAAC_BOX_LIFT_DEMO_20260910.md)
+
+[Open GIF](docs/media/isaac-lift-single-state-20260910.gif) ·
+[Captioned MP4](docs/media/isaac-lift-single-state-20260910.mp4) ·
+[Original MP4](docs/media/isaac-lift-single-state-20260910-raw.mp4) ·
+[Technical explanation, evidence and limits](docs/ISAAC_BOX_LIFT_DEMO_20260910.md)
+
+The **official pretrained BFM + VR-3 task planner** lifts a dynamic **1 kg** box
+through real contact in **IsaacLab / PhysX**: maximum measured bottom clearance
+**10.19 cm**, a **2.02 s hold**, **1.78 cm** final XYZ error, and stable release
+within **19.42 s**. The GIF plays inline at original speed; all 971 physical
+control steps are retained in the MP4. No fingers, attachment, object animation
+or extra lifting force are used.
+
+**No vision input:** the planner reads simulator ground-truth box pose and
+contact forces through IsaacLab APIs and supplies pelvis / left-wrist /
+right-wrist XYZ and orientation targets. The Transformer policy consumes robot
+proprioception, target/mask information and action history, not camera images or
+box state directly. It outputs joint actions; PD actuators and PhysX produce the
+motion. The renderer is used only to record the demonstration.
+
+Ten independent physical sequence checks passed locally. The recorded and
+unrecorded runs have identical trajectories, but use **the same initial state
+and seed**. This is not formal 60-episode D1 acceptance, walking carry, autonomous
+visual manipulation, hardware validation, or a newly trained manipulation policy.
+Materials are not hardware-calibrated; this experiment performed **zero training
+updates**. The [controller](ScaleTrack/scripts/pretrain/rsl_rl/lift_demo_balanced.py),
+[native runner](scripts/run_bfm_isaac_lift_balanced.py),
+[independent checks](scripts/bfm_lift_acceptance.py) and 57 logic tests are included.
+
+## Source and publication scope
+
+The `main` branch publishes the ScaleRetarget / ScaleTrack / ScaleBridge
 source, local extensions, tests and engineering reports. It continues the initial
 README-only project page; it is **not a complete, asset-bundled release**.
-Robot assets, bundled SDKs, motion data, body models, weights, experiment logs and
-demo recordings are deliberately excluded. See
+Robot assets, bundled SDKs, motion data, body models, weights and experiment logs
+are deliberately excluded. The explicit media exception is the robot-FK-only
+box-lift demo above: GIF, captioned/raw MP4, poster and archive receipt. See
 [snapshot scope and runtime setup](docs/SOURCE_SNAPSHOT.md) before using the
 upstream setup instructions below. Reuse an existing IsaacLab environment.
 
 High-dynamic controller recordings remain pending motion-source publication
-review and checkpoint attribution. No video is included or newly recorded in
-this source update. Local report paths and experiment hashes describe the original
+review; KIT/ACCAD-derived dance and body-motion videos are not included in this
+publication. Local report paths and experiment hashes describe the original
 development machine, not downloadable evaluation artifacts.
 
 This is an **unofficial reproduction and engineering extension** of

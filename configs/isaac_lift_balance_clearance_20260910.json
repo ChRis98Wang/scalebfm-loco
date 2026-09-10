@@ -1,0 +1,4 @@
+{
+  "wrist_offset_x_m": 0.03,
+  "clearance_feedback_gain_per_s": 1.0
+}

@@ -1,21 +1,50 @@
-# Source snapshot — 2026-09-09
+# Source snapshot and native lift demo — 2026-09-10
 
 This is a development source snapshot, not a complete ScaleBFM reproduction,
 rights-cleared release, or standalone simulator installation.
 
 ## Provenance and contents
 
-- Destination: `ChRis98Wang/scalebfm-loco`, branch `publish/scalebfm-20260909`.
-- Parent: the destination's initial README commit
-  `029659cebeb751a55f812153df8b0b9ac8eaf343`; existing `main` is preserved.
+- Destination: `ChRis98Wang/scalebfm-loco`, branch `main`, as requested by the user.
+- History: the destination's initial README commit
+  `029659cebeb751a55f812153df8b0b9ac8eaf343`, followed by the previously published
+  source snapshot `512a1a1c2a0b6f71db3c1b669cd702dace2978eb`, then this scoped demo
+  update. Publication is a fast-forward, not a force push or an import of the
+  asset-bearing local development history. The old publication branch is retained.
 - Upstream source baseline: [ScaleBFM at abd6f17](https://github.com/zengweishuai/ScaleBFM/tree/abd6f17c02fe0baabc14709feb8d9ea4959aa621).
 - Local engineering base: `897b1460146def06c705253dfee7c48db509c530`, plus the
   audited working-tree changes through the Stage II v3 experiment.
 - Included: main Python modules, shell entry points, configuration, packaging
   metadata, tests, CI and engineering reports, with existing author/license headers.
+  This update adds the native lift controller/runner, fixed experiment configs,
+  independent physical checks, 57 logic tests and the selected rendered media.
 - Excluded: the local asset-bearing Git history, external UMR checkout, Unitree
   SDK, robot models/meshes, bundled wheels, examples/motion arrays, AMASS/SMPL-X
-  inputs, checkpoints, logs, caches, credentials and media.
+  inputs, checkpoints, logs, caches, credentials and all other media.
+
+## Native box-lift addition
+
+The [box-lift report](ISAAC_BOX_LIFT_DEMO_20260910.md) explains the exact split
+between the official learned controller and our object-feedback sparse-target
+planner. The policy has no camera input; IsaacLab exposes simulator ground-truth
+state to the planner, not to a visual perception system. The single-state trial
+passed; formal multi-initial-state acceptance and walking carry are still pending.
+
+Only `docs/media/isaac-lift-single-state-20260910` with `.gif`, `.mp4`, `-raw.mp4`,
+`.png` and `.json` is added. The four media files total 16,179,655 bytes, copied
+byte-for-byte from the audited local archive. No AMASS motion frames were used
+for this box trial. The original archive receipt retains `publication_performed:
+false` because it records the earlier local archival operation; this document
+and Git history describe the later publication. Hashes/protocols are historical
+evidence, not downloadable full simulation logs or a blanket media/asset license.
+
+The native runtime source dependencies already present in the source snapshot
+match the recorded trial's input hashes. The added controllers, runner and
+configs also preserve the tested source bytes. The runner is provenance-bound:
+trusted official weights, robot assets, a matching FK seed and metadata are
+required separately. A fresh asset-free clone cannot launch the recorded trial
+until these inputs and the existing compatible IsaacLab environment are supplied.
+No dependency installer, GPU job or newly trained weights are part of this push.
 
 UMR v1/v2/v3 experiment scripts and frozen protocols retain their local file
 contents. Their reports reference local manifests and licensed inputs that are
@@ -34,7 +63,7 @@ For an independent, fresh workspace, first obtain the fixed upstream checkout:
 ```bash
 git clone --no-checkout https://github.com/zengweishuai/ScaleBFM.git /path/to/ScaleBFM-upstream
 git -C /path/to/ScaleBFM-upstream checkout --detach abd6f17c02fe0baabc14709feb8d9ea4959aa621
-git clone --branch publish/scalebfm-20260909 https://github.com/ChRis98Wang/scalebfm-loco.git /path/to/scalebfm-loco
+git clone --branch main https://github.com/ChRis98Wang/scalebfm-loco.git /path/to/scalebfm-loco
 ```
 
 Use new destinations; do not reset or overwrite an existing development checkout.
@@ -83,6 +112,16 @@ its locked pytest 8.4.2 dependency.
 The public CI runs only the explicit simulator-independent subset in
 `.github/workflows/cpu-tests.yml`; full physics and licensed-data validation remain
 separate. See [testing](../CONTRIBUTING.md).
+
+Before the 2026-09-10 `main` update, the isolated publication checkout reran the
+existing CPU subset: **138 tests passed**. Its new lift tests also passed:
+**49 controller tests + 8 independent acceptance-logic tests**. No dependencies
+were installed and no GPU/physics rollout was launched for publication. The
+published source/protocol/configuration matched all **54** relevant recorded
+runtime input hashes. All four media digests matched their original receipt;
+both MP4s fully decoded to 971 frames and the GIF to 194 frames / 19.4 seconds.
+The five updated public documentation pages passed 69 relative-link checks.
+These are local publication checks, not a claim of hosted CI success.
 
 The current policy is a Transformer actor-critic trained with PPO, not a CVAE.
 The latest v3 retargeting experiment completed 16/16 jobs, with mean wrist-target
