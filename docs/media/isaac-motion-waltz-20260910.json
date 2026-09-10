@@ -1,0 +1,71 @@
+{
+  "schema": "bfm.isaac_motion_archive/1",
+  "result": "COMPLETE",
+  "unit": "bfm-isaac-media-archive-20260910b.service",
+  "source_directory": "local/isaac_motion_waltz_20260910a",
+  "clip": "waltz",
+  "source_policy": "official model_22200.pt, NOT local PPO candidate",
+  "source_report_sha256": "a2216b4239b356e4c2cde06b4128fe5cec50ccd4ec573e54c39f5ac7869e6bd1",
+  "source_preview_receipt_sha256": "ba3dbaf192695a102d160f693be010607fb4224602221c407aae0065d215b2f7",
+  "engine": "IsaacLab / PhysX",
+  "mode": "WholeBody-14",
+  "video_duration_s": 7.06,
+  "metrics": {
+    "mean_position_m": 0.0760616892684766,
+    "max_position_m": 0.24622385836928473,
+    "mean_rotation_rad": 0.12651371776354825,
+    "root_start_xyz": [
+      0.1550896167755127,
+      0.06029343605041504,
+      0.77804034948349
+    ],
+    "root_end_xyz": [
+      0.14647014439105988,
+      -0.07496005296707153,
+      0.788560688495636
+    ],
+    "root_min_z_m": 0.6816810369491577,
+    "root_max_z_m": 0.800452709197998,
+    "root_xy_path_m": 1.8140646761803705,
+    "root_xy_displacement_m": 0.13552786280167523,
+    "root_yaw_span_rad": 0.4553910173008604,
+    "root_min_up": 0.9704665081848223
+  },
+  "numeric_preview_pass": true,
+  "visual_qa": {
+    "result": "SAMPLED_PASS",
+    "sample_fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "full_manual_playback": false,
+    "reviewed_explicitly": true,
+    "quality_limits": "Foot sliding and geometric penetration not quantitatively accepted"
+  },
+  "human_motion_inputs": true,
+  "redistribution_rights_verified": false,
+  "full_bfm_completed": false,
+  "object_task_tested": false,
+  "publication_performed": false,
+  "files": {
+    "isaac-motion-waltz-20260910-raw.mp4": {
+      "sha256": "54b031d26c91f4f432104ae0ef39c552a820cc66c48846f1df5726cccf22f1b2",
+      "bytes": 3028779
+    },
+    "isaac-motion-waltz-20260910.mp4": {
+      "sha256": "6d533e3b1ba029b45b7ba63b25c2f8d2bccbc5077c0e02e44594e13f91bfeb7d",
+      "bytes": 537363
+    },
+    "isaac-motion-waltz-20260910.gif": {
+      "sha256": "4db26815db598def609ce10c39c7bcbe344d7744a711a6ddc10fb23dc451c9ee",
+      "bytes": 3453628
+    },
+    "isaac-motion-waltz-20260910.png": {
+      "sha256": "a4dd61f661446fb4d2babe77f7cf0e8c0133b3ba60655ec69049bb02f98d2f98",
+      "bytes": 144428
+    }
+  }
+}

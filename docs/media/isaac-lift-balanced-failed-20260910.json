@@ -1,0 +1,52 @@
+{
+  "schema": "bfm.isaac_lift_archive/1",
+  "result": "COMPLETE",
+  "unit": "bfm-isaac-media-lift-archive-20260910d.service",
+  "source_directory": "local/isaac_lift_balanced_20260910d",
+  "source_report_sha256": "cfa380a669e2eb790ed4db1a6f6efbc9cb4a6192672c368a4166d6cd65005f05",
+  "audit_sha256": "f7e611b97c909f9c1a21687edfeb3fb2f34ee482fc5469320bd8594797473191",
+  "preview_receipt_sha256": "eae24a3441df1c3f0d46602698ff1808e3ce06202d8fa9f2f5bf3f4ccb4ee35f",
+  "engine": "IsaacLab / PhysX",
+  "source_policy": "official model_22200.pt",
+  "checkpoint_sha256": "88d5a79946c03ed25503f48b2af71d16290844ef066ca9b6c8fa8dc3837422e3",
+  "task_success": false,
+  "failure_reason": "box_tilt_exceeded",
+  "physical_seconds": 11.84,
+  "decoded_video_frames": 592,
+  "playback_speed": 1.0,
+  "visual_qa": {
+    "result": "SAMPLED_REVIEW_COMPLETE",
+    "sample_fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "full_manual_playback": false,
+    "physical_task_success": false
+  },
+  "human_motion_inputs": false,
+  "formal_d1_d2_accepted": false,
+  "full_bfm_completed": false,
+  "material_calibrated": false,
+  "publication_performed": false,
+  "files": {
+    "isaac-lift-balanced-failed-20260910-raw.mp4": {
+      "sha256": "2d8f48063224803d71e899b46fb192fc74ffc1abeea970aca18bdd519c8cc687",
+      "bytes": 4645939
+    },
+    "isaac-lift-balanced-failed-20260910.mp4": {
+      "sha256": "4e8fd08a59759fa0d01ab5a596b08d2682b04720ee2f03e8fb2da9b440272266",
+      "bytes": 706195
+    },
+    "isaac-lift-balanced-failed-20260910.gif": {
+      "sha256": "c375da7341ee3aaba983560bcb0d1535db18f4d5196069cd5c5563cbb492084b",
+      "bytes": 4493161
+    },
+    "isaac-lift-balanced-failed-20260910.png": {
+      "sha256": "70bfbdba999f3742fcd4b342c3141f9a2ebc058552949f38523eda09aa4e7e65",
+      "bytes": 182039
+    }
+  }
+}

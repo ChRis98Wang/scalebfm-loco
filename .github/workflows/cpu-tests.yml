@@ -31,6 +31,8 @@ jobs:
         run: python -m pytest tests/test_mask_report_compare.py -q
       - name: UMR A/B planning and quality-gate contracts (no data or simulator)
         run: python -m pytest tests/test_umr_behavior_ab_training.py tests/test_umr_behavior_ab_evaluation.py tests/test_umr_behavior_ab_comparison.py -q
+      - name: Published demo gallery integrity (no simulator)
+        run: python -m pytest tests/test_demo_gallery.py -q
       - name: Shell and whitespace checks
         run: |
           bash -n scripts/open_motion_browser.sh

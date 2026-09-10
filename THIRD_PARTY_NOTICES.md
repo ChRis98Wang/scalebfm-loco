@@ -36,10 +36,12 @@ Review those terms independently before using or redistributing this component.
 ## Not bundled
 
 Unitree SDK/binaries, robot assets, AMASS/SMPL-X data and models, external UMR,
-and checkpoints are not included. The only rendered-media exception is the
-[synthetic-reference box-lift demonstration](docs/ISAAC_BOX_LIFT_DEMO_20260910.md),
-which uses the official pretrained policy and robot-only FK targets, not human
-motion frames. Publishing these rendered results does not grant redistribution
+and checkpoints are not included. The rendered-media exception is the
+[13-recording research gallery](docs/DEMO_GALLERY.md), using the official
+pretrained policy with either robot-only synthetic targets or AMASS-derived
+KIT/ACCAD body-motion references. [Media credits and source terms](docs/MEDIA_SOURCES.md)
+identify these separately. No source motion arrays or participant videos are
+bundled. Publishing these rendered results does not grant redistribution
 rights to the underlying geometry, policy weights, simulator or data.
 Obtain any required dependency directly
 from its original source and preserve its own terms and notices. Exclusion from

@@ -1,0 +1,71 @@
+{
+  "schema": "bfm.isaac_motion_archive/1",
+  "result": "COMPLETE",
+  "unit": "bfm-isaac-media-archive-20260910a.service",
+  "source_directory": "local/isaac_motion_chacha_20260910b",
+  "clip": "chacha",
+  "source_policy": "official model_22200.pt, NOT local PPO candidate",
+  "source_report_sha256": "36045d2d7ab9961317d44a569f5f9601c42fd26010926fc1d7467e4ed483ffd5",
+  "source_preview_receipt_sha256": "a6b1b8ca978c8ca572c474acd1dbd526625e4eed61ae473cd77a5a70dae2e6b9",
+  "engine": "IsaacLab / PhysX",
+  "mode": "WholeBody-14",
+  "video_duration_s": 8.24,
+  "metrics": {
+    "mean_position_m": 0.05118034734130435,
+    "max_position_m": 0.1934326494288838,
+    "mean_rotation_rad": 0.1256549155846192,
+    "root_start_xyz": [
+      0.11742299795150757,
+      0.07802628725767136,
+      0.770280122756958
+    ],
+    "root_end_xyz": [
+      -0.05182429030537605,
+      -0.5460191369056702,
+      0.7897757291793823
+    ],
+    "root_min_z_m": 0.7153534293174744,
+    "root_max_z_m": 0.7968368530273438,
+    "root_xy_path_m": 1.9815227290141504,
+    "root_xy_displacement_m": 0.6465890008355489,
+    "root_yaw_span_rad": 0.4334099714561215,
+    "root_min_up": 0.9824832570866486
+  },
+  "numeric_preview_pass": true,
+  "visual_qa": {
+    "result": "SAMPLED_PASS",
+    "sample_fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "full_manual_playback": false,
+    "reviewed_explicitly": true,
+    "quality_limits": "Foot sliding and geometric penetration not quantitatively accepted"
+  },
+  "human_motion_inputs": true,
+  "redistribution_rights_verified": false,
+  "full_bfm_completed": false,
+  "object_task_tested": false,
+  "publication_performed": false,
+  "files": {
+    "isaac-motion-chacha-20260910-raw.mp4": {
+      "sha256": "8380dccaa5754ee988d390f4ff68440aaea924ce22c8a257be205d8c480ab3ba",
+      "bytes": 3455795
+    },
+    "isaac-motion-chacha-20260910.mp4": {
+      "sha256": "654ce0dc623675186007399a658262abf2660d62c4cac45f64c6bc0540bf0cbf",
+      "bytes": 592626
+    },
+    "isaac-motion-chacha-20260910.gif": {
+      "sha256": "bb920b49c98288ee93c9f56c96fc3071fd0c304d382af999e6e583ea651ecf6a",
+      "bytes": 3852596
+    },
+    "isaac-motion-chacha-20260910.png": {
+      "sha256": "29f478fc8bc8537626f843132e1a9515655337f9ce1f34a24421f096a1822d52",
+      "bytes": 139439
+    }
+  }
+}

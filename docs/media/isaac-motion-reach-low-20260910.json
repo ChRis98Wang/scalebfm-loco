@@ -1,0 +1,71 @@
+{
+  "schema": "bfm.isaac_motion_archive/1",
+  "result": "COMPLETE",
+  "unit": "bfm-isaac-media-archive-20260910d.service",
+  "source_directory": "local/isaac_motion_reach_low_20260910a",
+  "clip": "reach-low",
+  "source_policy": "official model_22200.pt, NOT local PPO candidate",
+  "source_report_sha256": "d663b85bab01068ebc950f12068629560ab8bbb4d9af5cd3ad0a96405288f25c",
+  "source_preview_receipt_sha256": "38252825c59870559a0764b425d93aa71c35783628db497b01fc41d04b7fd57c",
+  "engine": "IsaacLab / PhysX",
+  "mode": "WholeBody-14",
+  "video_duration_s": 6.9,
+  "metrics": {
+    "mean_position_m": 0.06736305995757089,
+    "max_position_m": 0.17424196914423568,
+    "mean_rotation_rad": 0.1284562949878627,
+    "root_start_xyz": [
+      2.3929691314697266,
+      2.4664347171783447,
+      0.7564670443534851
+    ],
+    "root_end_xyz": [
+      0.21477678418159485,
+      0.5102635622024536,
+      0.7845492959022522
+    ],
+    "root_min_z_m": 0.4593289792537689,
+    "root_max_z_m": 0.7860499024391174,
+    "root_xy_path_m": 3.344183843517528,
+    "root_xy_displacement_m": 2.9276487988391455,
+    "root_yaw_span_rad": 0.43684919251655563,
+    "root_min_up": 0.7636908566837539
+  },
+  "numeric_preview_pass": true,
+  "visual_qa": {
+    "result": "SAMPLED_PASS",
+    "sample_fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "full_manual_playback": false,
+    "reviewed_explicitly": true,
+    "quality_limits": "Foot sliding and geometric penetration not quantitatively accepted"
+  },
+  "human_motion_inputs": true,
+  "redistribution_rights_verified": false,
+  "full_bfm_completed": false,
+  "object_task_tested": false,
+  "publication_performed": false,
+  "files": {
+    "isaac-motion-reach-low-20260910-raw.mp4": {
+      "sha256": "4b36143a9767300305c46747ca5947ed836e62b13cdd20d4a685a1c9cfe117eb",
+      "bytes": 2501022
+    },
+    "isaac-motion-reach-low-20260910.mp4": {
+      "sha256": "60f38e33db2e0eab48bfe508a0aadc607f3271258fee0ded134debaa8cd6d096",
+      "bytes": 392860
+    },
+    "isaac-motion-reach-low-20260910.gif": {
+      "sha256": "530b533bed001636468ba398a9c82df9a860e2120598f0c99951917c3631ce93",
+      "bytes": 2612888
+    },
+    "isaac-motion-reach-low-20260910.png": {
+      "sha256": "39900562a7e12ecc540ce6b529e396f047ebe3ff39921f0fd57149d6848b8a26",
+      "bytes": 142472
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Source snapshot and native lift demo — 2026-09-10
+# Source snapshot and demo gallery — 2026-09-10
 
 This is a development source snapshot, not a complete ScaleBFM reproduction,
 rights-cleared release, or standalone simulator installation.
@@ -9,20 +9,41 @@ rights-cleared release, or standalone simulator installation.
 - History: the destination's initial README commit
   `029659cebeb751a55f812153df8b0b9ac8eaf343`, followed by the previously published
   source snapshot `512a1a1c2a0b6f71db3c1b669cd702dace2978eb`, then this scoped demo
-  update. Publication is a fast-forward, not a force push or an import of the
+  update at `8367d52`, followed by the owner's requested full playable gallery
+  and shortened README. Publication is a fast-forward, not a force push or an import of the
   asset-bearing local development history. The old publication branch is retained.
 - Upstream source baseline: [ScaleBFM at abd6f17](https://github.com/zengweishuai/ScaleBFM/tree/abd6f17c02fe0baabc14709feb8d9ea4959aa621).
 - Local engineering base: `897b1460146def06c705253dfee7c48db509c530`, plus the
   audited working-tree changes through the Stage II v3 experiment.
 - Included: main Python modules, shell entry points, configuration, packaging
   metadata, tests, CI and engineering reports, with existing author/license headers.
-  This update adds the native lift controller/runner, fixed experiment configs,
+  The lift update adds the native lift controller/runner, fixed experiment configs,
   independent physical checks, 57 logic tests and the selected rendered media.
 - Excluded: the local asset-bearing Git history, external UMR checkout, Unitree
   SDK, robot models/meshes, bundled wheels, examples/motion arrays, AMASS/SMPL-X
   inputs, checkpoints, logs, caches, credentials and all other media.
 
-## Native box-lift addition
+## Current media gallery
+
+The owner subsequently requested every usable GIF/video and a concise AMASS
+section. The [gallery](DEMO_GALLERY.md) now includes 13 complete recordings:
+6 current native IsaacLab clips, 2 synthetic MuJoCo controls, 3 older body-motion
+comparisons and 2 explicitly failed trials. All 13 GIFs and 26 MP4s are linked
+from README; failed tasks remain in a separate collapsed section.
+
+The 52 media files total 78,158,772 bytes. Full decode checks passed for every
+GIF/MP4 and source hashes were verified. Only three missing GIFs were generated;
+existing MP4s were not cut or re-encoded. No new policy/physics trial, training,
+runtime-source changes, dataset or checkpoint publication occurred in this gallery
+update. [Hashes and file inventory](media/gallery-20260910.json) ·
+[Source credits and publication boundaries](MEDIA_SOURCES.md).
+
+The full AMASS training/retargeting experiment history remains in the existing
+documents; README now provides only the pipeline, data scale, model, training
+conclusion and GUI/setup links. Previous local archive flags are historical,
+not a new legal-clearance certificate.
+
+## Earlier native box-lift addition
 
 The [box-lift report](ISAAC_BOX_LIFT_DEMO_20260910.md) explains the exact split
 between the official learned controller and our object-feedback sparse-target
@@ -30,7 +51,7 @@ planner. The policy has no camera input; IsaacLab exposes simulator ground-truth
 state to the planner, not to a visual perception system. The single-state trial
 passed; formal multi-initial-state acceptance and walking carry are still pending.
 
-Only `docs/media/isaac-lift-single-state-20260910` with `.gif`, `.mp4`, `-raw.mp4`,
+The earlier `8367d52` update added only `docs/media/isaac-lift-single-state-20260910` with `.gif`, `.mp4`, `-raw.mp4`,
 `.png` and `.json` is added. The four media files total 16,179,655 bytes, copied
 byte-for-byte from the audited local archive. No AMASS motion frames were used
 for this box trial. The original archive receipt retains `publication_performed:

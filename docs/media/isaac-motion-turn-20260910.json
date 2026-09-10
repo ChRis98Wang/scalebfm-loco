@@ -1,0 +1,71 @@
+{
+  "schema": "bfm.isaac_motion_archive/1",
+  "result": "COMPLETE",
+  "unit": "bfm-isaac-media-archive-20260910c.service",
+  "source_directory": "local/isaac_motion_turn_20260910a",
+  "clip": "turn",
+  "source_policy": "official model_22200.pt, NOT local PPO candidate",
+  "source_report_sha256": "235c93863ba4324b52a0c7855703b2c38e492269e945f5bac184d1d8e9130d9a",
+  "source_preview_receipt_sha256": "56c9d86f6d9e6d066014e682f4f1a751f8bc2b77ca7eaf42ab172ffe714cc90e",
+  "engine": "IsaacLab / PhysX",
+  "mode": "WholeBody-14",
+  "video_duration_s": 10.58,
+  "metrics": {
+    "mean_position_m": 0.06414988657014385,
+    "max_position_m": 0.27042023935396114,
+    "mean_rotation_rad": 0.13115092494669708,
+    "root_start_xyz": [
+      -0.31511735916137695,
+      -2.8339767456054688,
+      0.7955818772315979
+    ],
+    "root_end_xyz": [
+      -0.31901422142982483,
+      -2.9285671710968018,
+      0.7393205165863037
+    ],
+    "root_min_z_m": 0.7237609028816223,
+    "root_max_z_m": 0.7955818772315979,
+    "root_xy_path_m": 7.245132126988391,
+    "root_xy_displacement_m": 0.09467066140135852,
+    "root_yaw_span_rad": 3.6172399137558147,
+    "root_min_up": 0.9712199433767496
+  },
+  "numeric_preview_pass": true,
+  "visual_qa": {
+    "result": "SAMPLED_PASS",
+    "sample_fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "full_manual_playback": false,
+    "reviewed_explicitly": true,
+    "quality_limits": "Foot sliding and geometric penetration not quantitatively accepted"
+  },
+  "human_motion_inputs": true,
+  "redistribution_rights_verified": false,
+  "full_bfm_completed": false,
+  "object_task_tested": false,
+  "publication_performed": false,
+  "files": {
+    "isaac-motion-turn-20260910-raw.mp4": {
+      "sha256": "ab56d3f2f9469c6f4ade5ab52a75a204faefdf0c140f83fd5621c405083e2ffa",
+      "bytes": 3671100
+    },
+    "isaac-motion-turn-20260910.mp4": {
+      "sha256": "2d46e6a9785783b66f6fc729574cf2a74aaedf92b477a0f7282e85f32aa2f7aa",
+      "bytes": 635436
+    },
+    "isaac-motion-turn-20260910.gif": {
+      "sha256": "bf34fa6851d90e6c38c3338bdf24a73e489c26e21f86725a5ad222929c1a4d41",
+      "bytes": 4079204
+    },
+    "isaac-motion-turn-20260910.png": {
+      "sha256": "0a6866fa51ec29ee6c0616e5347fb9fb261ea2a9ecce2922c992477193a0af68",
+      "bytes": 126237
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "bfm.isaac_motion_archive/1",
+  "result": "COMPLETE",
+  "unit": "bfm-isaac-media-archive-20260910a.service",
+  "source_directory": "local/isaac_motion_squat_20260910g",
+  "clip": "squat",
+  "source_policy": "official model_22200.pt, NOT local PPO candidate",
+  "source_report_sha256": "498de4e0b4eff6acd62652f0c30909d38937a903f61671bde33d39d39edea77a",
+  "source_preview_receipt_sha256": "04ca75e926a444b247190aaebf2a33acc04701ea594b23fc397d238e6266ffbe",
+  "engine": "IsaacLab / PhysX",
+  "mode": "WholeBody-14",
+  "video_duration_s": 4.58,
+  "metrics": {
+    "mean_position_m": 0.027292414472106834,
+    "max_position_m": 0.05143955748991237,
+    "mean_rotation_rad": 0.10608117388502793,
+    "root_start_xyz": [
+      0.011194055899977684,
+      0.13926327228546143,
+      0.8009788990020752
+    ],
+    "root_end_xyz": [
+      0.008955225348472595,
+      0.14057061076164246,
+      0.7866762280464172
+    ],
+    "root_min_z_m": 0.43716901540756226,
+    "root_max_z_m": 0.8009788990020752,
+    "root_xy_path_m": 0.4662437430501557,
+    "root_xy_displacement_m": 0.002592584835575476,
+    "root_yaw_span_rad": 0.17348574185217336,
+    "root_min_up": 0.9480125509785313
+  },
+  "numeric_preview_pass": true,
+  "visual_qa": {
+    "result": "SAMPLED_PASS",
+    "sample_fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "full_manual_playback": false,
+    "reviewed_explicitly": true,
+    "quality_limits": "Foot sliding and geometric penetration not quantitatively accepted"
+  },
+  "human_motion_inputs": true,
+  "redistribution_rights_verified": false,
+  "full_bfm_completed": false,
+  "object_task_tested": false,
+  "publication_performed": false,
+  "files": {
+    "isaac-motion-squat-20260910-raw.mp4": {
+      "sha256": "8a8c8c4fbd81482df335115e94f69053981316775697ec53ed8552e396fdf2a8",
+      "bytes": 1856414
+    },
+    "isaac-motion-squat-20260910.mp4": {
+      "sha256": "8af6cf535dd368a3b4bcb6879390d0c57f1ea15fb1da796d0aa3b4c231622d89",
+      "bytes": 305913
+    },
+    "isaac-motion-squat-20260910.gif": {
+      "sha256": "cbe331c3618be15cdfe0faebc3d47093cea4c521b35df6491415cfdbf4dec3b2",
+      "bytes": 2022746
+    },
+    "isaac-motion-squat-20260910.png": {
+      "sha256": "9baa37a1dbfad1c6f5442977f36213ef775e11f977f94001be5ff5842970af2c",
+      "bytes": 138320
+    }
+  }
+}

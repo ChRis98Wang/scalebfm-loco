@@ -1,0 +1,677 @@
+{
+  "schema": "bfm.demo_gallery/1",
+  "date": "2026-09-10",
+  "purpose": "non-commercial research demonstration",
+  "official_pretrained_policy": true,
+  "training_updates_in_recordings": 0,
+  "full_bfm_completed": false,
+  "formal_multi_initial_state_accepted": false,
+  "blanket_redistribution_license_granted": false,
+  "readme_entry": "README.md",
+  "source_notices": "docs/MEDIA_SOURCES.md",
+  "clips": [
+    {
+      "prefix": "isaac-lift-single-state-20260910",
+      "title": "Box lift, hold and replace",
+      "engine": "IsaacLab / PhysX",
+      "group": "native",
+      "status": "single_state_pass",
+      "human_motion_inputs": false,
+      "note": "1 kg; 10.19 cm clearance; 2.02 s hold; 1.78 cm final XYZ error. One initial state, not walking carry.",
+      "video_seconds": 19.42,
+      "video_frames": 971,
+      "source_run": "isaac_lift_balanced_20260910l",
+      "source_report_sha256": "3b0f66a3ce5f31472715a154f3a15e54d1287ac9d7b7b17c12919c56df93c8d9",
+      "files": {
+        "gif": {
+          "path": "docs/media/isaac-lift-single-state-20260910.gif",
+          "sha256": "1e821440afe3a2aca45b96f5faeb2a6d123776e91c1c8e782759515d8c3b2b79",
+          "bytes": 7139626,
+          "decoded_frames": 194,
+          "seconds": 19.4,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/isaac-lift-single-state-20260910.mp4",
+          "sha256": "1c90e3969a9499f86b7775fcc02bce5a4214c7fb244b4063928ce75f26b87d96",
+          "bytes": 1155569,
+          "decoded_frames": 971,
+          "seconds": 19.42,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/isaac-lift-single-state-20260910-raw.mp4",
+          "sha256": "f2e372d6940cea822ef12558b59893c6a122c95703e3fc75a398e2098c2a1643",
+          "bytes": 7687346,
+          "decoded_frames": 971,
+          "seconds": 19.42,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/isaac-lift-single-state-20260910.png",
+          "sha256": "ae4205a5eb23e3e63af989233022f550de32cbedd7c519c6dc80f87531ac34cb",
+          "bytes": 197114,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "isaac-motion-squat-20260910",
+      "title": "Squat and stand",
+      "engine": "IsaacLab / PhysX",
+      "group": "native",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "KIT/3/squat01",
+      "note": "2.73 cm mean body-position error; empty-handed.",
+      "video_seconds": 4.58,
+      "video_frames": 229,
+      "source_run": "isaac_motion_squat_20260910g",
+      "source_report_sha256": "498de4e0b4eff6acd62652f0c30909d38937a903f61671bde33d39d39edea77a",
+      "files": {
+        "gif": {
+          "path": "docs/media/isaac-motion-squat-20260910.gif",
+          "sha256": "cbe331c3618be15cdfe0faebc3d47093cea4c521b35df6491415cfdbf4dec3b2",
+          "bytes": 2022746,
+          "decoded_frames": 46,
+          "seconds": 4.6,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/isaac-motion-squat-20260910.mp4",
+          "sha256": "8af6cf535dd368a3b4bcb6879390d0c57f1ea15fb1da796d0aa3b4c231622d89",
+          "bytes": 305913,
+          "decoded_frames": 229,
+          "seconds": 4.58,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/isaac-motion-squat-20260910-raw.mp4",
+          "sha256": "8a8c8c4fbd81482df335115e94f69053981316775697ec53ed8552e396fdf2a8",
+          "bytes": 1856414,
+          "decoded_frames": 229,
+          "seconds": 4.58,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/isaac-motion-squat-20260910.png",
+          "sha256": "9baa37a1dbfad1c6f5442977f36213ef775e11f977f94001be5ff5842970af2c",
+          "bytes": 138320,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "isaac-motion-chacha-20260910",
+      "title": "Cha-cha",
+      "engine": "IsaacLab / PhysX",
+      "group": "native",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "KIT/572/dance_chacha01",
+      "note": "5.12 cm mean body-position error; selected development clip.",
+      "video_seconds": 8.24,
+      "video_frames": 412,
+      "source_run": "isaac_motion_chacha_20260910b",
+      "source_report_sha256": "36045d2d7ab9961317d44a569f5f9601c42fd26010926fc1d7467e4ed483ffd5",
+      "files": {
+        "gif": {
+          "path": "docs/media/isaac-motion-chacha-20260910.gif",
+          "sha256": "bb920b49c98288ee93c9f56c96fc3071fd0c304d382af999e6e583ea651ecf6a",
+          "bytes": 3852596,
+          "decoded_frames": 82,
+          "seconds": 8.2,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/isaac-motion-chacha-20260910.mp4",
+          "sha256": "654ce0dc623675186007399a658262abf2660d62c4cac45f64c6bc0540bf0cbf",
+          "bytes": 592626,
+          "decoded_frames": 412,
+          "seconds": 8.24,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/isaac-motion-chacha-20260910-raw.mp4",
+          "sha256": "8380dccaa5754ee988d390f4ff68440aaea924ce22c8a257be205d8c480ab3ba",
+          "bytes": 3455795,
+          "decoded_frames": 412,
+          "seconds": 8.24,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/isaac-motion-chacha-20260910.png",
+          "sha256": "29f478fc8bc8537626f843132e1a9515655337f9ce1f34a24421f096a1822d52",
+          "bytes": 139439,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "isaac-motion-waltz-20260910",
+      "title": "Waltz",
+      "engine": "IsaacLab / PhysX",
+      "group": "native",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "KIT/572/dance_waltz00",
+      "note": "7.61 cm mean body-position error; selected development clip.",
+      "video_seconds": 7.06,
+      "video_frames": 353,
+      "source_run": "isaac_motion_waltz_20260910a",
+      "source_report_sha256": "a2216b4239b356e4c2cde06b4128fe5cec50ccd4ec573e54c39f5ac7869e6bd1",
+      "files": {
+        "gif": {
+          "path": "docs/media/isaac-motion-waltz-20260910.gif",
+          "sha256": "4db26815db598def609ce10c39c7bcbe344d7744a711a6ddc10fb23dc451c9ee",
+          "bytes": 3453628,
+          "decoded_frames": 71,
+          "seconds": 7.1,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/isaac-motion-waltz-20260910.mp4",
+          "sha256": "6d533e3b1ba029b45b7ba63b25c2f8d2bccbc5077c0e02e44594e13f91bfeb7d",
+          "bytes": 537363,
+          "decoded_frames": 353,
+          "seconds": 7.06,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/isaac-motion-waltz-20260910-raw.mp4",
+          "sha256": "54b031d26c91f4f432104ae0ef39c552a820cc66c48846f1df5726cccf22f1b2",
+          "bytes": 3028779,
+          "decoded_frames": 353,
+          "seconds": 7.06,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/isaac-motion-waltz-20260910.png",
+          "sha256": "a4dd61f661446fb4d2babe77f7cf0e8c0133b3ba60655ec69049bb02f98d2f98",
+          "bytes": 144428,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "isaac-motion-turn-20260910",
+      "title": "Walk, turn and return",
+      "engine": "IsaacLab / PhysX",
+      "group": "native",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "ACCAD/Female1Walking/B15",
+      "note": "6.41 cm mean body-position error; turning route, not arbitrary-goal navigation.",
+      "video_seconds": 10.58,
+      "video_frames": 529,
+      "source_run": "isaac_motion_turn_20260910a",
+      "source_report_sha256": "235c93863ba4324b52a0c7855703b2c38e492269e945f5bac184d1d8e9130d9a",
+      "files": {
+        "gif": {
+          "path": "docs/media/isaac-motion-turn-20260910.gif",
+          "sha256": "bf34fa6851d90e6c38c3338bdf24a73e489c26e21f86725a5ad222929c1a4d41",
+          "bytes": 4079204,
+          "decoded_frames": 106,
+          "seconds": 10.6,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/isaac-motion-turn-20260910.mp4",
+          "sha256": "2d46e6a9785783b66f6fc729574cf2a74aaedf92b477a0f7282e85f32aa2f7aa",
+          "bytes": 635436,
+          "decoded_frames": 529,
+          "seconds": 10.58,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/isaac-motion-turn-20260910-raw.mp4",
+          "sha256": "ab56d3f2f9469c6f4ade5ab52a75a204faefdf0c140f83fd5621c405083e2ffa",
+          "bytes": 3671100,
+          "decoded_frames": 529,
+          "seconds": 10.58,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/isaac-motion-turn-20260910.png",
+          "sha256": "0a6866fa51ec29ee6c0616e5347fb9fb261ea2a9ecce2922c992477193a0af68",
+          "bytes": 126237,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "isaac-motion-reach-low-20260910",
+      "title": "Walk and reach low (empty-handed)",
+      "engine": "IsaacLab / PhysX",
+      "group": "native",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "ACCAD/Female1Walking/B19",
+      "note": "6.74 cm mean body-position error; no box is present despite the reference filename.",
+      "video_seconds": 6.9,
+      "video_frames": 345,
+      "source_run": "isaac_motion_reach_low_20260910a",
+      "source_report_sha256": "d663b85bab01068ebc950f12068629560ab8bbb4d9af5cd3ad0a96405288f25c",
+      "files": {
+        "gif": {
+          "path": "docs/media/isaac-motion-reach-low-20260910.gif",
+          "sha256": "530b533bed001636468ba398a9c82df9a860e2120598f0c99951917c3631ce93",
+          "bytes": 2612888,
+          "decoded_frames": 69,
+          "seconds": 6.9,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/isaac-motion-reach-low-20260910.mp4",
+          "sha256": "60f38e33db2e0eab48bfe508a0aadc607f3271258fee0ded134debaa8cd6d096",
+          "bytes": 392860,
+          "decoded_frames": 345,
+          "seconds": 6.9,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/isaac-motion-reach-low-20260910-raw.mp4",
+          "sha256": "4b36143a9767300305c46747ca5947ed836e62b13cdd20d4a685a1c9cfe117eb",
+          "bytes": 2501022,
+          "decoded_frames": 345,
+          "seconds": 6.9,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/isaac-motion-reach-low-20260910.png",
+          "sha256": "39900562a7e12ecc540ce6b529e396f047ebe3ff39921f0fd57149d6848b8a26",
+          "bytes": 142472,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "synthetic-wrist-control-vr3-20260909",
+      "title": "Standing 3D wrist targets",
+      "engine": "MuJoCo",
+      "group": "synthetic",
+      "status": "engineering_pass",
+      "human_motion_inputs": false,
+      "note": "VR-3 wrist XYZ RMSE 3.54 / 3.77 cm; single initial state, no object contact.",
+      "video_seconds": 12,
+      "video_frames": 600,
+      "source_run": "synthetic_wrist_video_20260909a",
+      "source_report_sha256": "5287717bdab1bffc259566b450bbe80785b3df0f1c098bb209a9f3e4324b6656",
+      "files": {
+        "gif": {
+          "path": "docs/media/synthetic-wrist-control-vr3-20260909.gif",
+          "sha256": "65ba0391d67b3984f30d5b87f6bcb3951b51d2c24dfec50179524443f37d2567",
+          "bytes": 1299146,
+          "decoded_frames": 120,
+          "seconds": 12.0,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/synthetic-wrist-control-vr3-20260909.mp4",
+          "sha256": "702cc77f38c48e620f2319f466a3285fb508bea5bfaba49ca0e8d9844eed181e",
+          "bytes": 342739,
+          "decoded_frames": 600,
+          "seconds": 12,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/synthetic-wrist-control-vr3-20260909-raw.mp4",
+          "sha256": "37f20e6d26b1921bbd956715189f995943e98c902c96d5d5d17699292908494c",
+          "bytes": 774993,
+          "decoded_frames": 600,
+          "seconds": 12,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/synthetic-wrist-control-vr3-20260909.png",
+          "sha256": "5c1fe8860ff4c596d1d6dfae02606742735bf5137d7c2a4f72b7e5b119c0611e",
+          "bytes": 103080,
+          "width": 640,
+          "height": 480
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "synthetic-move-wrists-20260909",
+      "title": "Movement with changing wrist height",
+      "engine": "MuJoCo",
+      "group": "synthetic",
+      "status": "engineering_pass",
+      "human_motion_inputs": false,
+      "note": "0.9295 m forward travel; only 1 of 4 paired development cases passed. No object carrying.",
+      "video_seconds": 20,
+      "video_frames": 1000,
+      "source_run": "synthetic_loco_video_6_lift_20260909b",
+      "source_report_sha256": "2a4df717fc2bd27719d6c203453f5d5308e84035da25157f54c78e5f11c19be1",
+      "files": {
+        "gif": {
+          "path": "docs/media/synthetic-move-wrists-20260909.gif",
+          "sha256": "32c17a41717021a16ad07235d23d628bff4cc49e5502741d832d8d747ce22b2e",
+          "bytes": 1632330,
+          "decoded_frames": 200,
+          "seconds": 20.0,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/synthetic-move-wrists-20260909.mp4",
+          "sha256": "4c922348ea7dae1ce3ae74b740ae58495d0975ef625020027d9a5ced039a1ff4",
+          "bytes": 490479,
+          "decoded_frames": 1000,
+          "seconds": 20,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/synthetic-move-wrists-20260909-raw.mp4",
+          "sha256": "22a8e10b38ae8886a4512d331b6d81eae0c3c997209fb11e7c24b1f75bd2cd42",
+          "bytes": 1107805,
+          "decoded_frames": 1000,
+          "seconds": 20,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/synthetic-move-wrists-20260909.png",
+          "sha256": "a3aedef9fc9a9fb8fcd14832baa93d4e02faceb9c3249c1bcef25a86f7a855f5",
+          "bytes": 103887,
+          "width": 640,
+          "height": 480
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "motion-squat-20260909",
+      "title": "Earlier squat and stand",
+      "engine": "MuJoCo",
+      "group": "earlier",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "KIT/3/squat01",
+      "note": "Earlier simulation comparison, not an additional motion type or new policy.",
+      "video_seconds": 4.6,
+      "video_frames": 230,
+      "source_run": "motion_demo_squat_20260909a",
+      "source_report_sha256": "551591c5425563322e2a792faa468a34ec64f2e189e3e355fd8bdc8c003921f4",
+      "files": {
+        "gif": {
+          "path": "docs/media/motion-squat-20260909.gif",
+          "sha256": "109cbac6f3fe7d7177e787b30cc9441b1c00d1163e52bea76baea7e7b0cdb705",
+          "bytes": 627514,
+          "decoded_frames": 46,
+          "seconds": 4.6,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/motion-squat-20260909.mp4",
+          "sha256": "06d7a930cc046daddc7dd8e3ee71f09083c668893c56859236ed89caf323bc52",
+          "bytes": 225390,
+          "decoded_frames": 230,
+          "seconds": 4.6,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/motion-squat-20260909-raw.mp4",
+          "sha256": "2f88f0e3a371999263fcabd4645ede48472a29430d89c9f07a97d227c5d4497a",
+          "bytes": 762666,
+          "decoded_frames": 230,
+          "seconds": 4.6,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/motion-squat-20260909.png",
+          "sha256": "a473a516bf546ea174bf5c4b898b4d2c9fe7302f0c83b0b6a61f04eb3c75702c",
+          "bytes": 183060,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "motion-chacha-20260909",
+      "title": "Earlier cha-cha",
+      "engine": "MuJoCo",
+      "group": "earlier",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "KIT/572/dance_chacha01",
+      "note": "Earlier simulation comparison, not an additional motion type or new policy.",
+      "video_seconds": 8.26,
+      "video_frames": 413,
+      "source_run": "motion_demo_chacha_20260909a",
+      "source_report_sha256": "ae0c2ccdc5dc51a9160ada8a59372d2f6c44ca2080324988f0b299878f0c96c0",
+      "files": {
+        "gif": {
+          "path": "docs/media/motion-chacha-20260909.gif",
+          "sha256": "0857fbaf8687baa75fc855cb59976ca5ac53acd838239921c1ee6df8f6c70d0f",
+          "bytes": 1167531,
+          "decoded_frames": 83,
+          "seconds": 8.3,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/motion-chacha-20260909.mp4",
+          "sha256": "45b9b4c71a0cdb0444939db3dfd3b8edfc4c2b64662cf1929272ec8c4d11b014",
+          "bytes": 431350,
+          "decoded_frames": 413,
+          "seconds": 8.26,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/motion-chacha-20260909-raw.mp4",
+          "sha256": "518db243913e3aa11dc3995c676f5742939872e5f99d834cc2d158c13f9a6c07",
+          "bytes": 1388430,
+          "decoded_frames": 413,
+          "seconds": 8.26,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/motion-chacha-20260909.png",
+          "sha256": "554287987219269361069208278c4a720f2bbcb2de4786928e3497c3288ef516",
+          "bytes": 191966,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "motion-waltz-20260909",
+      "title": "Earlier waltz",
+      "engine": "MuJoCo",
+      "group": "earlier",
+      "status": "preview_pass",
+      "human_motion_inputs": true,
+      "origin": "KIT/572/dance_waltz00",
+      "note": "Earlier simulation comparison, not an additional motion type or new policy.",
+      "video_seconds": 7.08,
+      "video_frames": 354,
+      "source_run": "motion_demo_waltz_20260909a",
+      "source_report_sha256": "95c5ad5c90721d9d75fbb54ea0740cd3a208e375d15f9d7c26de8a997572f35f",
+      "files": {
+        "gif": {
+          "path": "docs/media/motion-waltz-20260909.gif",
+          "sha256": "126977f89df21436240ca27f3ab68d50dbd2ea09c4597135de15b2c652363452",
+          "bytes": 1032088,
+          "decoded_frames": 71,
+          "seconds": 7.1,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/motion-waltz-20260909.mp4",
+          "sha256": "f5d493b76d9313fa1f931f7aecf85a123fe3b8c7b5431b3c12f479c03e6e2b74",
+          "bytes": 382525,
+          "decoded_frames": 354,
+          "seconds": 7.08,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/motion-waltz-20260909-raw.mp4",
+          "sha256": "7c86a8bdabc1470b232f8c655b27e44baedff9709f58ba46b866c0ca8d93aa65",
+          "bytes": 1204995,
+          "decoded_frames": 354,
+          "seconds": 7.08,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/motion-waltz-20260909.png",
+          "sha256": "a2d65a073bc3264b13a8d1fa5da31428a05086a96dac13744143a43ae7c9a54b",
+          "bytes": 193133,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "loco-push-20260909",
+      "title": "Box push — strict task FAIL",
+      "engine": "MuJoCo",
+      "group": "failures",
+      "status": "failed_trial",
+      "human_motion_inputs": false,
+      "note": "17/19 checks passed; right-wrist contact continuity and floor support failed. Not carrying.",
+      "video_seconds": 20,
+      "video_frames": 1000,
+      "source_run": "loco_push_video_mode6_20260909a",
+      "source_report_sha256": "a2eb88454899438f9f124bc9fe180971fb36e7df3bff784451c9ffd22d7f21ca",
+      "files": {
+        "gif": {
+          "path": "docs/media/loco-push-20260909.gif",
+          "sha256": "3425a87bff27a793104e6abb0944a18f61bd2a55efa911e6512e7d9cb09187cc",
+          "bytes": 1648265,
+          "decoded_frames": 200,
+          "seconds": 20.0,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/loco-push-20260909.mp4",
+          "sha256": "0c350874a7e0a1cb7bf927aba9cca096a895d871a4764bb8cc99d6f32e762152",
+          "bytes": 782372,
+          "decoded_frames": 1000,
+          "seconds": 20,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/loco-push-20260909-raw.mp4",
+          "sha256": "57dd567de6887b156f11397014eaf02debbbe7e6b37958f2edbbceb613ae4106",
+          "bytes": 1953113,
+          "decoded_frames": 1000,
+          "seconds": 20,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/loco-push-20260909.png",
+          "sha256": "c95fe1d35b3f308d49e45a05112097da30924268c2316d98b3119f2eb729b820",
+          "bytes": 233660,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    },
+    {
+      "prefix": "isaac-lift-balanced-failed-20260910",
+      "title": "Earlier box lift — FAIL",
+      "engine": "IsaacLab / PhysX",
+      "group": "failures",
+      "status": "failed_trial",
+      "human_motion_inputs": false,
+      "note": "Stopped on excessive box tilt; did not lift clear of the table. Earlier failed trial.",
+      "video_seconds": 11.84,
+      "video_frames": 592,
+      "source_run": "isaac_lift_balanced_20260910d",
+      "source_report_sha256": "cfa380a669e2eb790ed4db1a6f6efbc9cb4a6192672c368a4166d6cd65005f05",
+      "files": {
+        "gif": {
+          "path": "docs/media/isaac-lift-balanced-failed-20260910.gif",
+          "sha256": "c375da7341ee3aaba983560bcb0d1535db18f4d5196069cd5c5563cbb492084b",
+          "bytes": 4493161,
+          "decoded_frames": 118,
+          "seconds": 11.8,
+          "width": 640,
+          "height": 480,
+          "loop": 0
+        },
+        "mp4": {
+          "path": "docs/media/isaac-lift-balanced-failed-20260910.mp4",
+          "sha256": "4e8fd08a59759fa0d01ab5a596b08d2682b04720ee2f03e8fb2da9b440272266",
+          "bytes": 706195,
+          "decoded_frames": 592,
+          "seconds": 11.84,
+          "fps": 50
+        },
+        "raw_mp4": {
+          "path": "docs/media/isaac-lift-balanced-failed-20260910-raw.mp4",
+          "sha256": "2d8f48063224803d71e899b46fb192fc74ffc1abeea970aca18bdd519c8cc687",
+          "bytes": 4645939,
+          "decoded_frames": 592,
+          "seconds": 11.84,
+          "fps": 50
+        },
+        "poster": {
+          "path": "docs/media/isaac-lift-balanced-failed-20260910.png",
+          "sha256": "70bfbdba999f3742fcd4b342c3141f9a2ebc058552949f38523eda09aa4e7e65",
+          "bytes": 182039,
+          "width": 960,
+          "height": 720
+        }
+      },
+      "media_full_decode_pass": true,
+      "full_manual_playback_review": false
+    }
+  ],
+  "total_media_files": 52,
+  "total_media_bytes": 78158772,
+  "gif_count": 13,
+  "mp4_count": 26,
+  "excluded": "Incomplete/stale-renderer retries, duplicate source copies, raw FK/retargeting diagnostics, datasets, weights and complete experiment logs are not gallery entries."
+}

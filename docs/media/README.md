@@ -1,25 +1,25 @@
-# Published native box-lift demonstration
+# Published demonstration media
 
-[![Original-speed physical lift, hold, replace and release](isaac-lift-single-state-20260910.gif)](../ISAAC_BOX_LIFT_DEMO_20260910.md)
+[Open the complete gallery](../DEMO_GALLERY.md) ·
+[Inline GIFs in the repository README](../../README.md) ·
+[Source credits and boundaries](../MEDIA_SOURCES.md)
 
-[Captioned MP4](isaac-lift-single-state-20260910.mp4) ·
-[Uncaptioned MP4 source](isaac-lift-single-state-20260910-raw.mp4) ·
-[Original archival receipt and SHA-256 hashes](isaac-lift-single-state-20260910.json)
+The 2026-09-10 gallery contains **13 GIFs, 26 MP4s and 13 PNG posters**:
+6 current native IsaacLab recordings, 2 MuJoCo sparse-target controls,
+3 earlier MuJoCo body-motion comparisons and 2 explicitly failed task trials.
 
-The official pretrained BFM plus a VR-3 target planner controls a real dynamic
-1 kg box in native IsaacLab / PhysX. No vision input, attachment, post-reset
-object animation, or extra lifting force. This is a single-initial-state
-development pass, not walking carry or a fully reproduced ScaleBFM system.
+Each prefix has a `.gif`, captioned `.mp4`, unchanged `-raw.mp4` and poster
+`.png`. All media passed full decoding / expected-frame-count checks; original
+recordings and existing captions are preserved. Full-window GIFs play at 1x.
+This is sampled visual review plus full automatic decode, not complete manual
+playback or a new physical acceptance run.
 
-The MP4s retain all 971 physical control frames, 960x720 at 50 fps, 19.42 seconds
-at original speed. The GIF is the complete 640x480 / 10 fps preview (19.4 seconds
-after frame-time quantization). Full decode checks and five sampled visual checks
-were completed locally; no full manual frame-by-frame review is claimed.
+The machine-readable [gallery catalog](gallery-20260910.json) lists every file,
+SHA-256, byte count, source report hash, duration and outcome. Total media size is
+**78,158,772 bytes**. Existing per-recording archive JSONs are historical receipts:
+their local-only/publication/rights flags are not rewritten by this later push.
 
-Four media files total 16,179,655 bytes. They are unmodified copies of the local
-archive. Its JSON records the earlier local archival operation and therefore
-retains `publication_performed: false`; publication is recorded by the later Git
-commit, not by rewriting old evidence. Full local trajectories, weights, robot
-assets, data and other videos are not bundled. See the
-[source-snapshot scope](../SOURCE_SNAPSHOT.md) and
-[third-party notices](../../THIRD_PARTY_NOTICES.md).
+All demos use official pretrained weights, not new locally trained manipulation
+policies. Keep the **failed** pushing/lifting clips and the **empty-handed**
+reaching clip labelled accordingly. Do not infer complete ScaleBFM reproduction,
+walking carry, generalization or hardware validation from playback.
